@@ -84,15 +84,15 @@ layout: default
   </div>
 
   <!-- ---------------------Network------------------- -->
-<!--   <div class='bbox'>
+  <div class='bbox'>
       
     <div class="result_half_fig">    
-      <object width="" type="image/svg+xml" data="../assets/img/Figure_24_new.svg">
+      <object width="" type="image/svg+xml" data="{{ "/assets/img/Figure_24_new.svg" | relative_url }}">
       Your browser does not support SVG
       </object>
     </div>
 
-    <img src="../assets/img/Figure_1.svg" width = "600" alt="Kiwi standing on oval">
+    <img src="{{ "/assets/img/Figure_1.svg" | relative_url }}" width = "600" alt="Your browser does not support SVG">
 
     <div class="result_full_desc">
       <p>
@@ -101,7 +101,7 @@ layout: default
     </div>
 
     <div class="clearfix"></div>
-  </div> -->
+  </div>
 
 <!--   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
