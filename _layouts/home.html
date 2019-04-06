@@ -1,0 +1,132 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+<!--   <h2>In a nut-shell</h2> -->
+  <!-- --------- Aim, abstract (conscise description of the project) -->
+<!--   <p>
+  This project aims to address scalability issues of the training phase of machine learning algorithms. Currently, we have tested the method for SVM classifiers. Although the aim is quite researched upon, methods in this work are a mixture from diverse mathematical fields. That includes nearest neighbor methods, discrete optimization and numerical methods. A couple of methods are proposed. First one is called graph shedding (GS) heuristic which essentially ensures serial correctness of original training. The next one called graph clubbing (GC) heuristic introduces an approximate learning scheme that is distributed. Both methods are compared to state-of-the-art shrinking methods of LIBSVM. The foreground shows the pre-processing steps (four) common to both methods.
+  </p>
+
+
+  <h2>Manuscript resources</h2> -->
+  <!-- ---------- Files et. cetera (using below template) -->
+<!--   <p>
+  Resources with respect to the article (undergoing submission in the Journal of Big Data) are shared next. However, few synthetic datasets used during the study are available from us via email request.
+  </p>
+
+  <table style="width:100%">
+    <tr>
+      <th>Resource</th>
+      <th>Description</th>
+      <th>Dependency</th>
+    </tr>
+    <tr>
+      <td> <a href="../assets/files/hash_key_gen.cpp"> hash_key_gen.cpp </a> </td>
+      <td>Functions for hash key generation and hash table</td>
+      <td>C++, GCC 5.4.0 compiler</td>
+    </tr>
+  </table> 
+
+  <h2>Findings</h2> -->
+  <!-- --------- Prsentation of major findings -->
+
+<!--   Promising results are obtained for both methods, and network design that accompanied the distributed implementation of GC heuristic. -->
+  
+  <!-- ---------------------GS Heuristic------------------- -->
+<!--   <div class="bbox">
+    <div class="result_full_fig">    
+      <object width="" type="image/svg+xml" data="../assets/img/Figure_9_new.svg">
+      Your browser does not support SVG
+      </object>
+    </div>
+    <div class="result_full_desc">
+      <p>
+        Sub-plot a shows scaling benefits with points of graph shedding heuristic ('GS heuristic' plot) against LIBSVM ('LIBSVM shrinking heuristic' plot). Closeness of prediction accuracy (sub-plot b) supports 'serial correctness' claim of the GS heuristic. 
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  </div> -->
+
+  <!-- ---------------------serial GC Heuristic------------------- -->
+<!--   <div class="bbox">
+    <div class="result_full_fig">    
+      <object width="" type="image/svg+xml" data="../assets/img/Figure_17_new.svg">
+      Your browser does not support SVG
+      </object>
+    </div>
+    <div class="result_full_desc">
+      <p>
+        This figure follows semantics of the first figure. However, it is for GC heuristic. A clear scaling heirarchy of GC > GS > LIBSVM heuristics can be observed in sub-plot a. The approximate scheme also shows close accuracies for points ~><i>8k</i>.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  </div> -->
+
+  <!-- ---------------------GC Heuristic------------------- -->
+<!--   <div class="bbox">
+    <div class="result_full_fig">    
+      <object width="" type="image/svg+xml" data="../assets/img/Figure_21_new.svg">
+      Your browser does not support SVG
+      </object>
+    </div>
+    <div class="result_full_desc">
+      <p>
+        Communication-free (coarse) distribution scheme is demonstrated. Exploiting worker threads/processes yeilds additional performance benefits (sub-plot a). Coarse distribution of the training set is shown in sub-plot b. 
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  </div> -->
+
+  <!-- ---------------------Network------------------- -->
+<!--   <div class='bbox'>
+      
+    <div class="result_half_fig">    
+      <object width="" type="image/svg+xml" data="../assets/img/Figure_24_new.svg">
+      Your browser does not support SVG
+      </object>
+    </div>
+
+    <img src="../assets/img/Figure_1.svg" width = "600" alt="Kiwi standing on oval">
+
+    <div class="result_full_desc">
+      <p>
+        Since message types were known for the distributed implementation of GC heuristic, we designed the network optmized for the need. One such aspect of the network was message protocols (right sub-figure). Protocol 1 which involved message marshalling was superior (left sub-figure). This optimization is analogous to dynamic programming. 
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+  </div> -->
+
+<!--   {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    Updates will be posted regularly. Technical details and other interesting reads shall be presented via blog-posts.  
+
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+          <pre style="background-color:white;font-size:12px">{{ post.subtitle | escape }}</pre>
+        </h3>
+
+
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+  {%- endif -%} -->
+
+</div>
